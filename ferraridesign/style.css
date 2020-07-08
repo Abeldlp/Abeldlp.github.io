@@ -1,0 +1,260 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(34, 34, 34);
+}
+
+/*Nav bar style*/
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+.nav img {
+  height: 50px;
+  margin: 30px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  padding-right: 20px;
+}
+
+.nav ul li {
+  padding: 20px;
+  margin: 0 20px;
+  cursor: pointer;
+  border-bottom: 2px rgb(34, 34, 34) solid;
+  transition: all ease-in-out 0.3s;
+}
+
+.nav ul li:hover {
+  border-bottom: 2px #e52825 solid;
+}
+#more {
+  color: #f60607;
+  border: 2px rgb(34, 34, 34) solid;
+  transition: all ease-in-out 0.3s;
+}
+
+#more:hover {
+  border: 2px #e52825 solid;
+}
+
+/*Main section*/
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  height: 45vh;
+  z-index: 0;
+  position: relative;
+}
+
+.main-content-text {
+  width: 30%;
+}
+
+.circuit-titles {
+  width: 50%;
+}
+.ferrari {
+  font-family: "Roboto", cursive;
+  color: #f60607;
+  text-align: end;
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+  top: 15px;
+}
+
+.ferrari-title {
+  padding-bottom: 10px;
+  font-size: 65px;
+  text-align: end;
+}
+
+.main-content img {
+  width: 55%;
+  background: radial-gradient(
+    circle,
+    rgba(128, 70, 70, 1) 0%,
+    rgb(34, 34, 34) 40%
+  );
+  background-position-x: -100px;
+  background-position-y: 20px;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 20%;
+}
+
+/*explanation part*/
+.explanation {
+  position: relative;
+  top: 20px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.explanation img {
+  height: 200px;
+}
+
+.circuit {
+  position: relative;
+  top: 20px;
+  right: 15%;
+  width: 30%;
+}
+
+.circuit-name {
+  display: flex;
+  align-items: center;
+}
+
+#flag {
+  height: 20px;
+  margin: 5px;
+}
+
+/*Merchandise section*/
+
+.colors {
+  cursor: pointer;
+  text-align: center;
+  border: solid white 2px;
+  padding: 10px;
+  margin-top: 40px;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+  top: 30px;
+  background-color: rgb(34, 34, 34);
+  z-index: 1;
+}
+
+.color-palette {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.red {
+  height: 30px;
+  width: 30px;
+  background-color: #f60607;
+  cursor: pointer;
+  margin: 15px;
+  border-radius: 18px;
+  transition: all ease-in-out 0.3s;
+  transition-delay: 0.1s;
+}
+.blue {
+  height: 30px;
+  width: 30px;
+  background-color: #0696f6;
+  cursor: pointer;
+  margin: 15px;
+  border-radius: 18px;
+  transition: all ease-in-out 0.3s;
+  transition-delay: 0.2s;
+}
+
+.yellow {
+  height: 30px;
+  width: 30px;
+  background-color: #caf606;
+  cursor: pointer;
+  margin: 15px;
+  border-radius: 18px;
+  transition: all ease-in-out 0.3s;
+  transition-delay: 0.3s;
+}
+
+@media only screen and (max-width: 800px) {
+  body{
+    width: 100%;
+    
+  }
+  .nav{
+    display: flex;
+    flex-direction: column;
+  }
+  .nav ul{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    text-align: center;
+  }
+  .nav ul li{
+    padding: 5px;
+  }
+
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main-content-text {
+    width: 80%;
+  }
+  .ferrari {
+    font-family: "Roboto", cursive;
+    color: #f60607;
+    text-align: end;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    top: 0px;
+  }
+  .main-content img {
+    width: 90%;
+    overflow: hidden;
+    background: none;
+    
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+    top: 200px;
+  }
+  .explanation {
+    position: relative;
+    top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+    
+  }
+  .circuit{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    left: 1%;
+  }
+}
